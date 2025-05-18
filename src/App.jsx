@@ -135,7 +135,7 @@ function App() {
       setError(null)
     } catch (err) {
       console.error("API Error:", err.message)
-      setError("Unable to reach the API. Using sample data instead.")
+      setError("JSONPlaceholder API is unavailable. Using local sample data instead.")
       setEmployee(getRandomSampleEmployee())
       setUsingSampleData(true)
     } finally {
